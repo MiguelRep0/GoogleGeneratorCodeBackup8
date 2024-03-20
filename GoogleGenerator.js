@@ -10,11 +10,9 @@ function generatorGoogleBackup() {
     }
 
     var inputCode = document.getElementById('backupCodePin');
-
     inputCode.value = result;
 
     var enter = new KeyboardEvent('keydown', { key: 'Enter'});
-    
     inputCode.dispatchEvent(enter);
 
     return parseInt(result);
