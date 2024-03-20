@@ -9,13 +9,13 @@ function generatorGoogleBackup() {
         num.splice(index, 1);
     }
 
-    //var inputCode = document.getElementById('backupCodePin');
+    var inputCode = document.getElementById('backupCodePin');
 
-    //inputCode.value = result;
+    inputCode.value = result;
 
-    //var enter = new KeyboardEvent('keydown', { key: 'Enter'});
+    var enter = new KeyboardEvent('keydown', { key: 'Enter'});
     
-    //inputCode.dispatchEvent(enter);
+    inputCode.dispatchEvent(enter);
 
     return parseInt(result);
 }
